@@ -6,15 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#4285f4">
     <title>Okafor Henry | Landing page</title>
+    <link href="https://netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato&display=swap"
+        rel="stylesheet" />
+    <link href="index.css" rel="stylesheet">
 </head>
-<body>
-    <section>
-        <div>
-            Hi there,<br/>
-            I'm Okafor Henry
-        </div>
-        <button>more about me</button>
+<body onload="nameDisplay()">
+    <section class="container">
+        <section class="personal-information">
+            <div>
+                <h5>Hi there</h5>
+                <span id="name" class="name"></span>
+                <h5 class="intro">Frontend developer | Web instructor</h5>
+            </div>
+            <a href="resume.html">more about me &raquo;</a>
+        </section>
+        <section class="social-links">
+            <a href="https://twitter.com/_okafohenrie" target="_blank">
+                <i class="fa fa-twitter bounce"></i>
+            </a>
+            <a href="https://linkedin.com/in/henry-okafor-854112112" target="_blank">
+                <i class="fa fa-linkedin bounce"></i>
+            </a>
+            <a href="https://www.facebook.com/okafohenrie/" target="_blank">
+                <i class="fa fa-facebook bounce"></i>
+            </a>
+            <a href="https://github.com/okafohenry" target="_blank">
+                <i class="fa fa-github bounce"></i>
+            </a>
+        </section>
     </section>
-    <section></section>
+
+    <script>
+
+        var  i = 0;
+        var name = 'I\'m Okafor Henry';
+        var typingSpeed = 100;
+
+        const nameDisplay = () => {
+            if(i < name.length){
+                document.getElementById('name').innerHTML += name.charAt(i);
+                i++;
+                setTimeout(nameDisplay, typingSpeed);
+            }
+            
+            setTimeout(skillDisplay, 2000);
+        }
+    </script>
 </body>
 </html>
