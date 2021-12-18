@@ -1,45 +1,14 @@
 html, body {
     font-family: 'Josefin Sans' !important;
 }
+body {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.895), rgba(0, 0, 0, 0.895)), url('https://res.cloudinary.com/okafohenrie/image/upload/v1639749732/me_f8vdzi.jpg') no-repeat;
+    background-size: cover;
+}
 
 a {
     text-decoration: none;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 .container {
@@ -61,9 +30,11 @@ a {
 .personal-information h5{
     font-weight: lighter;
 }
+
 .name {
-    font-size: 36px;
+    font-size: 40px;
     font-weight: Bold;
+    color: lawngreen;
 }
 .personal-information a {
     background: transparent;
@@ -71,11 +42,13 @@ a {
     font-size: 13px;
     position: relative;
     top: 50px;
-    border: 3px solid blue;
+    color: rgba(151, 151, 151, 0.87);
+    border: 1px solid rgba(151, 151, 151, 0.87);
 }
-
-
-
+.personal-information a:hover {
+    color: lawngreen;
+    border: 1px solid lawngreen;
+}
 .social-links {
     margin-top: 100px;
 }
@@ -85,8 +58,17 @@ a {
     padding: 20px 30px;
     color: rgba(151, 151, 151, 0.87);
 }
-.fa-twitter:hover, .fa-linkedin:hover, .fa-facebook:hover, .fa-github:hover {
-    color: #027bdd;
+.fa-twitter:hover {
+    color: #1da0f2ee;
+}
+.fa-linkedin:hover {
+    color: #0e77a8ee;
+}
+.fa-facebook:hover {
+    color: #3b5898f3;
+}
+.fa-github:hover {
+    color: #3b3838;
 }
   
 
