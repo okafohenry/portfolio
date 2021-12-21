@@ -1,8 +1,12 @@
+body {
+    margin: 0;
+}
 html, body {
     font-family: 'Josefin Sans' !important;
 }
 h2 {
     font-size: 33px;
+    text-align: center;
 }
 section {
     max-width: 100%;
@@ -10,14 +14,14 @@ section {
 }
 .container {
     width: 75%;
-    min-width: 300px;
-    padding: 20px;
-    background: yellow;
+    min-width: fit-content;
+    padding: 10px;
     margin: 0 auto;
 }
 
 .personal-info {    
     text-align: center;
+    background: hotpink;
 }
 
 .personal-info img {
@@ -26,9 +30,59 @@ section {
     box-shadow: 0px 2px 5px 0px  #abababab;  
 }
 .personal-info p {
-    width: 70%;
+    width: 65%;
     margin: 30px auto 0 auto;
     font-size: 20px;
     text-align: left;
     line-height: 1.7rem;
+}
+
+
+/* Education section and timeline*/
+.education {
+    background: red;
+    padding-top: 1.5em;
+    clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+
+.timeline-container{
+    position: relative;
+    width: 70%;
+    background: grey;
+    padding: 10px;
+    margin: 0 auto;
+}
+/*creating line for timeline*/
+.timeline-container::after{
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color: #FFC0CB;
+    top:0;
+    bottom: 0;
+    left: 35%;
+}
+/*Adjusting box of all content*/
+.content{
+    padding: 10px 40px;
+    position: relative;
+    width:51%;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+
+
+
+
+.skills {
+    background: blue;
+}
+.experience {
+    background: greenyellow
+}
+.portfolio {
+    background: orchid;
+}
+.contact-me {
+    background: silver;
 }

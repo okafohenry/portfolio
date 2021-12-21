@@ -2,7 +2,7 @@ html, body {
     font-family: 'Josefin Sans' !important;
 }
 body {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.895), rgba(0, 0, 0, 0.895)), url('https://res.cloudinary.com/okafohenrie/image/upload/v1639749732/me_f8vdzi.jpg') no-repeat;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.836), rgba(0, 0, 0, 0.836)), url('https://res.cloudinary.com/okafohenrie/image/upload/v1639749732/me_f8vdzi.jpg') no-repeat;
     background-size: cover;
 }
 
@@ -12,55 +12,61 @@ a {
 
 
 .container {
-    max-width: 500px;
+    max-width: 700px;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;    
+    padding: 20px;    
     text-align: center;
     position: relative;
-    top: 7em;
+    top: 5em;
+}
+.hi-there, .intro {
+    font-size: 15px;
 }
 .personal-information, .social-links {
-    padding: 30px 20px;
-    color: rgba(151, 151, 151, 0.87);
+    padding: 30px 0px;
+    color: rgba(199, 199, 199, 0.87);
 }
-.personal-information {
-    text-transform: uppercase;
-}
+
 .personal-information h5{
     font-weight: lighter;
 }
 
 .name {
-    font-size: 40px;
+    font-size: 65px;
     font-weight: Bold;
-    color: lawngreen;
+    color: #cc005f;
 }
 .personal-information a {
     background: transparent;
     padding: 15px;
-    font-size: 13px;
+    font-size: 15px;
     position: relative;
     top: 50px;
-    color: rgba(151, 151, 151, 0.87);
-    border: 1px solid rgba(151, 151, 151, 0.87);
+    color: rgba(199, 199, 199, 0.87);
+    border: 2px solid rgba(199, 199, 199, 0.87);
 }
 .personal-information a:hover {
-    color: lawngreen;
-    border: 1px solid lawngreen;
+    color: #cc005f;
+    border-color: #cc005f;
 }
 .social-links {
     margin-top: 100px;
 }
 .fa-twitter,  .fa-linkedin, .fa-facebook, .fa-github {
-    font-size: 50px;
+    font-size: 40px;
     text-align: center;
     padding: 20px 30px;
     color: rgba(151, 151, 151, 0.87);
 }
+.fa-twitter:hover, .fa-linkedin:hover, .fa-facebook:hover, .fa-github:hover {
+    color: #cc005f;
+}
+/*
 .fa-twitter:hover {
     color: #1da0f2ee;
 }
+
 .fa-linkedin:hover {
     color: #0e77a8ee;
 }
@@ -70,6 +76,7 @@ a {
 .fa-github:hover {
     color: #3b3838;
 }
+*/
   
 
 /* Bouncy Icons */
