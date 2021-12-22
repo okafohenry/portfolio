@@ -12,7 +12,7 @@ section {
     max-width: 100%;
     padding: 0px;
 }
-.container {
+.section-container {
     width: 75%;
     min-width: fit-content;
     padding: 10px;
@@ -21,7 +21,7 @@ section {
 
 .personal-info {    
     text-align: center;
-    background: hotpink;
+    padding-bottom: 30px;
 }
 
 .personal-info img {
@@ -40,15 +40,14 @@ section {
 
 /* Education section and timeline*/
 .education {
-    background: red;
-    padding-top: 1.5em;
+    background: #ebebeb;
+    padding-top: 5em;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
 
 .timeline-container{
     position: relative;
     width: 70%;
-    background: grey;
     padding: 10px;
     margin: 0 auto;
 }
@@ -57,28 +56,108 @@ section {
     content: '';
     position: absolute;
     width: 1px;
-    background-color: #FFC0CB;
+    background-color: #b9b9b9de;
     top:0;
     bottom: 0;
-    left: 35%;
+    left: 47.5%;
 }
 /*Adjusting box of all content*/
+.content-list {
+    margin: 15px 0;
+}
 .content{
-    padding: 10px 40px;
+    padding: 10px 20px;
     position: relative;
-    width:51%;
+    width:45%;
     box-sizing: border-box;
-    margin: 50px 0;
+    margin: 5px 0;
+}
+.degree-date {
+    text-align: center;
+}
+.education-info {
+    top: -120px;
+}
+/* circular container */
+
+.degree-date::after{
+    font-family: "FontAwesome";
+	content: "\f19d";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    right: -43px;
+    top: 30px;
+    border-radius: 50%;
+    z-index: 1;    
+    background-color: #313131;
+    line-height: 42px;  /* centralize graduation-cap icon */
+    color: #ebebeb;
+}
+.left {
+    left: 0;
+}
+.right {
+    left: 50%;
 }
 
+@media screen and (max-width: 600px) {
+    .content {
+        width: 100%;
+        padding: 0px 20px;
+        margin: 0 auto;
+    }
+    .degree-date {
+        text-align:unset;
+        margin-top: 30px;
+    }
+    .education-info {
+        top: -7px;
+    }
+    .right {
+        left: 0;
+    } 
+    .timeline-container::after{
+        left: -3px;
+    }
+    .degree-date::after{
+        left: -32px;
+        top: -8px;
+        text-align: center;
+    }
+    .skills li{
+        display: inline-flex;
+        padding: 3px 12px;
+    }
+ 
+}
 
+@media screen and (max-width: 1010px) and (min-width: 601px) {
+    .degree-date::after{
+        right: -33px;
+    }
 
+}
 
+/* skills */
 .skills {
     background: blue;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
+.skills ul {
+    padding: 0;
+    width: 70%;
+}
+
+.skills li {
+    list-style: none;
+    padding: 3px 15px;
+    display: inline-grid;
+}
+
 .experience {
-    background: greenyellow
+    background: greenyellow;
 }
 .portfolio {
     background: orchid;
