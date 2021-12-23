@@ -7,7 +7,7 @@ html, body {
 h2 {
     font-size: 33px;
     text-align: center;
-    padding-bottom: 2rem;;
+    padding-bottom: 1rem;
 }
 section {
     max-width: 100%;
@@ -22,11 +22,12 @@ section {
 
 .personal-info {    
     text-align: center;
+    padding-top: 2rem;
     padding-bottom: 30px;
 }
 .santas-hat {
     position: absolute;
-    top: 6.8rem;
+    top: 8.8rem;
     margin-left: 5rem;
     transform: rotate(30deg)
 }
@@ -170,7 +171,7 @@ section {
 
 .experience {
     background: #313131;
-    padding: 3rem 0 5rem 0;
+    padding: 3rem 0 7rem 0;
     color: #ebebeb;
 }
 .experience a {
@@ -193,8 +194,12 @@ section {
     color: #313131;
 }
 .portfolio {
-    background: orchid;
+    padding: 2rem 0 2rem 0;
+    color: #313131 ;
 }
+
+
+
 .contact-me {
     background: silver;
 }

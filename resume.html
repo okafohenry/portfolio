@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato&display=swap"
         rel="stylesheet" />
+    <script src="scripts/animation.js"></script>
     <link href="resume.css" rel="stylesheet">
     <link href="animation.css" rel="stylesheet">
 </head>
@@ -122,6 +123,52 @@
     <section class="portfolio">
         <div class="section-container">
             <h2>Portfolio</h2>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <a href="">
+                        <div class="numbertext">1 / 4</div>
+                        <img src="https://res.cloudinary.com/okafohenrie/image/upload/v1640218620/Screenshot_2021-12-01_10.00.59_g6gywk.png" alt="guru-learning-mgt-system.png" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </a>
+                </div>
+                
+                <div class="mySlides fade">
+                    <a href="">
+                        <div class="numbertext">2 / 4</div>
+                        <img src="https://res.cloudinary.com/okafohenrie/image/upload/v1640218617/Screenshot_2021-12-22_23.42.20_nej6mu.png" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </a>
+                </div>
+                
+                <div class="mySlides fade">
+                    <a href="">
+                        <div class="numbertext">3 / 4</div>
+                        <img src="https://res.cloudinary.com/okafohenrie/image/upload/v1640218624/Screenshot_2020-09-23_23.14.08_mryqa0.png" style="width:100%">
+                        <div class="text">Caption Three</div>
+                    </a>                   
+                </div>
+
+                <div class="mySlides fade">
+                    <a href="">
+                        <div class="numbertext">4 / 4</div>
+                        <img src="https://res.cloudinary.com/okafohenrie/image/upload/v1640218616/Screenshot_2021-12-22_23.31.21_ydkwtz.png" style="width:100%">
+                        <div class="text">Caption four</div>
+                    </a>                   
+                </div>
+                
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                
+            </div>
+            <br>
+            
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span> 
+                <span class="dot" onclick="currentSlide(2)"></span> 
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>  
+            </div>
         </div>
     </section>
     <section class="contact-me">
