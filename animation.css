@@ -52,7 +52,7 @@
 
   /* Slideshow */
   
-.mySlides {display: none}
+.mySlides {display: none;}
 .slideshow-container img {vertical-align: middle;}
   
 /* Slideshow container */
@@ -92,12 +92,13 @@
 
 /* Caption text */
 .text {
+  background: #13131383;
   color: #f2f2f2;
-  font-size: 15px;
+  font-size: 14px;
   padding: 8px 12px;
   position: absolute;
-  bottom: 8px;
-  width: 100%;
+  bottom: 0px;
+  width: 96%;
   text-align: center;
 }
 
