@@ -5,10 +5,71 @@ html, body {
     font-family: 'Josefin Sans' !important;
 }
 h2 {
-    font-size: 33px;
+    font-size: 30px;
     text-align: center;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
+    letter-spacing: 3px;
 }
+h4 {
+    letter-spacing: 3px;
+    text-align: center;
+    color: #cc005f;
+    font-size: 18px;
+}
+nav {
+    width: 100%;
+    background: transparent;
+    padding: 1rem;
+    position: fixed;
+    top: 0;
+    z-index: 20;
+}
+nav a.hire-me-nav, .fa-arrow-circle-left, .fa-bars {
+    color: #cc005f;
+}
+nav a.hire-me-nav {
+    text-decoration: none;
+    float: right;
+    margin-right: 100px;
+    font-size: 17px;
+    padding: 7px 20px;
+    border: 2px solid #cc005f;
+}
+.fa-arrow-circle-left {
+    font-size: 24px;
+    margin-left: 50px;
+}
+.fa-bars {
+    float: right;
+    font-size: 20px;
+    padding: 7px;
+    margin-right: -150px;
+}
+.drop-down-links {
+    width: 100%;
+    margin-left: -15px;
+    margin-top: 20px;
+    display: none;
+}
+
+.drop-down-links a{
+    width: 100%;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    background: #313131f3; 
+    padding-top: 30px;
+    padding-bottom: 30px;
+    color: #fff;
+}
+.drop-down-links a:hover {
+    text-decoration: underline;
+}
+.show {display: block;}
+
+
+
+
 section {
     max-width: 100%;
     padding: 0px;
@@ -22,14 +83,7 @@ section {
 
 .personal-info {    
     text-align: center;
-    padding-top: 2rem;
-    padding-bottom: 30px;
-}
-.santas-hat {
-    position: absolute;
-    top: 8rem;
-    margin-left: 5rem;
-    transform: rotate(30deg)
+    padding-bottom: 3rem;
 }
 
 .personal-info .my-img {
@@ -51,6 +105,9 @@ section {
     background: #ebebeb;
     padding-top: 5em;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
+}
+.education h2 {
+    color: #cc005f;
 }
 
 .timeline-container{
@@ -94,7 +151,7 @@ section {
     position: absolute;
     width: 40px;
     height: 40px;
-    right: -43px;
+    right: -40px;
     top: 30px;
     border-radius: 50%;
     z-index: 1;    
@@ -109,7 +166,207 @@ section {
     left: 50%;
 }
 
+
+/* skills */
+.skills {
+    background: #313131 url('https://res.cloudinary.com/okafohenrie/image/upload/v1640171169/background-1299431_1280_hdu9db.png')  no-repeat center;
+    background-size: cover;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    color: #ebebeb;
+}
+
+
+.skills ul {
+    padding: 0;
+    width: 70%;
+}
+
+.skills li {
+    list-style: none;
+    padding: 3px 15px;
+    display: inline-grid;
+}
+
+/* Experience */
+
+.experience {
+    background: #151515;
+    padding: 3rem 0 7rem 0;
+    color: #ebebeb;
+    letter-spacing: 1.5px;
+    line-height: 17px;
+}
+.experience h2 {
+    color: #cc005f;
+}
+
+
+.experience .degree-date::after{
+	content: "\f0f2"; 
+    background-color: #ebebeb;
+    color: #313131;
+    right: -40px;
+}
+
+.experience .button-container li {
+    list-style: none;
+    display: inline-grid;
+    margin-top: 20px;
+}
+.experience .button-container a {
+    text-decoration: none;
+    padding: 15px 50px;
+    font-size: 15px;
+    position: relative;
+    top: 50px;
+    border: 2px solid #ebebeb;
+}
+.experience .button-container a.hire-me {
+    margin-right: 20px;
+}
+.solid {
+    background: #ebebeb;
+    color: #313131;
+    font-weight: bold;
+}
+a.solid:hover {
+    background: #ebebebb6;
+    border-color: #ebebebb6;
+}
+.inverse {
+    background: transparent;
+    color: #ebebeb;
+}
+a.inverse:hover {
+    color: #ebebebb6;
+    border-color: #ebebebb6;
+}
+
+@media screen and (max-width: 925px){
+    .experience .button-container a.hire-me {
+        padding-left: 77px;
+        padding-right: 77px;
+        margin-right: 0;
+    }
+
+}
+
+
+
+/*  Portfolio  */
+.portfolio {
+    padding: 2rem 0 2rem 0;
+    color: #313131 ;
+}
+.overlay {                  /* portfolio overlay */
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .overlay-container:hover img {
+    opacity: 0.35;
+  }
+  
+  .overlay-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .live-demo-text {
+    background-color: transparent;
+    color: #cc005f;
+    border: 2px solid #cc005f;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 16px 32px;
+  }
+  
+
+
+.contact-me {
+    background: #151515;
+    padding-top: 2.3rem;
+    padding-bottom: 5rem;
+}
+.contact-me h2 {
+    color: #fff;
+}
+.contact-me form {
+    width: 70%;
+    margin: 0 auto;
+}
+.contact-me input, .contact-me textarea {
+    font-family: 'Josefin Sans' !important;
+    font-size: 16px;
+    width: 95%;
+    padding: 20px;
+    letter-spacing: .5px;
+    background: transparent;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+.contact-me input {    
+    margin-top: 10px;
+}
+.contact-me input:focus, .contact-me textarea:focus {
+    border-color: #cc005f;
+}
+.contact-me input:focus-visible, .contact-me textarea:focus-visible {
+    outline-style: auto;
+    outline-width: 0px;
+}
+.contact-me textarea {
+    resize: none;
+    height: 230px;
+    margin-top: 20px;
+    border-bottom-width: 2px;
+}
+
+.contact-me form button {
+    font-family: 'Josefin Sans' !important;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: .5px;
+    margin-top: 30px;
+    width: 100%;
+    min-width: 200px;
+    padding: 20px;
+    background: #cc005f;
+    border-color: #cc005f;
+    color: #ffffffff;
+}
+
+
+footer {
+    margin-top: 0;
+    padding: 2rem 0;
+    text-align: center;
+    background: #151515;
+}
+footer a {
+    padding: .7rem;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ebebeb;
+}
+
+
+
 @media screen and (max-width: 600px) {
+    nav {
+        position: relative;
+    }
+    .fa-arrow-circle-left, .hire-me-nav {
+        visibility: hidden;
+    }
+
     .content {
         width: 100%;
         padding: 0px 20px;
@@ -145,164 +402,4 @@ section {
         right: -33px;
     }
 
-}
-
-/* skills */
-.skills {
-    background: #313131 url('https://res.cloudinary.com/okafohenrie/image/upload/v1640171169/background-1299431_1280_hdu9db.png')  no-repeat center;
-    background-size: cover;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-    color: #ebebeb;
-}
-
-.skills ul {
-    padding: 0;
-    width: 70%;
-}
-
-.skills li {
-    list-style: none;
-    padding: 3px 15px;
-    display: inline-grid;
-}
-
-/* Experience */
-
-.experience {
-    background: #313131;
-    padding: 3rem 0 7rem 0;
-    color: #ebebeb;
-}
-.experience .degree-date::after{
-	content: "\f0f2"; 
-    background-color: #ebebeb;
-    color: #313131;
-}
-
-.experience .button-container li {
-    list-style: none;
-    display: inline-grid;
-    margin-top: 20px;
-}
-.experience .button-container a {
-    text-decoration: none;
-    padding: 15px 50px;
-    font-size: 15px;
-    position: relative;
-    top: 50px;
-    border: 2px solid #ebebeb;
-}
-.experience .button-container a.hire-me {
-    margin-right: 50px;
-}
-.solid {
-    background: #ebebeb;
-    color: #313131;
-    font-weight: bold;
-}
-a.solid:hover {
-    background: #ebebebb6;
-    border-color: #ebebebb6;
-}
-.inverse {
-    background: transparent;
-    color: #ebebeb;
-}
-a.inverse:hover {
-    color: #ebebebb6;
-    border-color: #ebebebb6;
-}
-
-@media screen and (max-width: 925px){
-    .experience .button-container a.hire-me {
-        padding-left: 60px;
-        padding-right: 60px;
-        margin-right: 0;
-    }
-
-}
-
-
-
-/*  Portfolio  */
-.portfolio {
-    padding: 2rem 0 2rem 0;
-    color: #313131 ;
-}
-.overlay {                  /* portfolio overlay */
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  
-  .overlay-container:hover img {
-    opacity: 0.35;
-  }
-  
-  .overlay-container:hover .overlay {
-    opacity: 1;
-  }
-  
-  .live-demo-text {
-    background-color: transparent;
-    color: #13131383;
-    border: 3px solid #13131383;
-    font-size: 16px;
-    font-weight: bold;
-    padding: 16px 32px;
-  }
-  
-
-
-.contact-me {
-    background: #151515;
-    padding-top: 2.3rem;
-    padding-bottom: 5rem;
-    color: #cc005f;
-}
-.contact-me form {
-    width: 70%;
-    margin: 0 auto;
-}
-.contact-me input, .contact-me textarea {
-    font-family: 'Josefin Sans' !important;
-    font-size: 16px;
-    width: 100%;
-    padding: 20px;
-    letter-spacing: .5px;
-    background: transparent;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-}
-.contact-me input {    
-    margin-top: 10px;
-}
-.contact-me input:focus-visible, .contact-me textarea:focus-visible {
-    outline-style: auto;
-    outline-width: 0px;
-}
-.contact-me textarea {
-    resize: none;
-    height: 230px;
-    margin-top: 20px;
-    border-bottom-width: 2px;
-}
-
-footer {
-    padding: 2rem 0;
-    text-align: center;
-    background: rgba(0, 0, 0, 0.89);
-}
-footer a {
-    padding: .7rem;
-    font-size: 25px;
-    text-decoration: none;
-    color: #ebebeb;
 }
