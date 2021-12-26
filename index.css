@@ -77,4 +77,9 @@ a {
     color: #3b3838;
 }
 */
+@media screen and (max-width: 600px) {
+    .name {
+        font-size: 53px;
+    }
+}
   

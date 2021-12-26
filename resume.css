@@ -19,7 +19,8 @@ h4 {
 nav {
     width: 100%;
     background: transparent;
-    padding: 1rem;
+    padding-top: 1rem;
+    padding-bottom: .02rem;
     position: fixed;
     top: 0;
     z-index: 20;
@@ -35,21 +36,26 @@ nav a.hire-me-nav {
     padding: 7px 20px;
     border: 2px solid #cc005f;
 }
+nav a.hire-me-nav:hover {
+    background: #cc005f;
+    color: #fff;
+}
 .fa-arrow-circle-left {
     font-size: 24px;
     margin-left: 50px;
 }
 .fa-bars {
     float: right;
+    margin-right: -160px;
     font-size: 20px;
-    padding: 7px;
-    margin-right: -150px;
+    padding: 10px;
+    visibility: hidden;
 }
 .drop-down-links {
     width: 100%;
-    margin-left: -15px;
     margin-top: 20px;
     display: none;
+    z-index: 20;
 }
 
 .drop-down-links a{
@@ -83,6 +89,7 @@ section {
 
 .personal-info {    
     text-align: center;
+    padding-top: 5rem;
     padding-bottom: 3rem;
 }
 
@@ -194,8 +201,8 @@ section {
     background: #151515;
     padding: 3rem 0 7rem 0;
     color: #ebebeb;
-    letter-spacing: 1.5px;
-    line-height: 17px;
+    letter-spacing: 1px;
+    line-height: 15px;
 }
 .experience h2 {
     color: #cc005f;
@@ -311,6 +318,7 @@ a.inverse:hover {
     border-top: none;
     border-left: none;
     border-right: none;
+    color: #fff;
 }
 .contact-me input {    
     margin-top: 10px;
@@ -329,7 +337,7 @@ a.inverse:hover {
     border-bottom-width: 2px;
 }
 
-.contact-me form button {
+input[type=submit] {
     font-family: 'Josefin Sans' !important;
     font-size: 16px;
     font-weight: bold;
@@ -340,7 +348,7 @@ a.inverse:hover {
     padding: 20px;
     background: #cc005f;
     border-color: #cc005f;
-    color: #ffffffff;
+    color: #ebebeb;
 }
 
 
@@ -356,17 +364,34 @@ footer a {
     text-decoration: none;
     color: #ebebeb;
 }
+footer .fa-twitter:hover {
+    color: #1da0f2ee;
+}
+
+footer .fa-linkedin:hover {
+    color: #0e77a8ee;
+}
+footer .fa-facebook:hover {
+    color: #3b5898f3;
+}
+footer .fa-github:hover {
+    color: #3b3838;
+}
 
 
 
 @media screen and (max-width: 600px) {
     nav {
-        position: relative;
+        background: #fff;
     }
     .fa-arrow-circle-left, .hire-me-nav {
         visibility: hidden;
     }
+    .fa-bars {
+        visibility: visible;
+    }
 
+    
     .content {
         width: 100%;
         padding: 0px 20px;
@@ -393,6 +418,9 @@ footer a {
     .skills li{
         display: inline-flex;
         padding: 3px 12px;
+    }
+    input[type=submit] {
+        margin-left: 15px;
     }
  
 }

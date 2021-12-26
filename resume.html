@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Lato&display=swap"
         rel="stylesheet" />
-    <script src="scripts/animation.js"></script>
     <link href="resume.css" rel="stylesheet">
     <link href="animation.css" rel="stylesheet">
+    <script src="scripts/animation.js"></script>
 </head>
 <body>
     <nav>
@@ -142,7 +142,7 @@
                     <a href="https://guru-vls.herokuapp.com/">
                         <div class="numbertext">1 / 4</div>
                         <img src="https://res.cloudinary.com/okafohenrie/image/upload/v1640218620/Screenshot_2021-12-01_10.00.59_g6gywk.png" alt="guru-learning-mgt-system.png" style="width:100%">
-                        <div class="text">Lorem ipsum dolor sit amet, quo ei simul congue exerci, ad nec admodum perfecto mnesarchum, vim ea mazim fierent detracto. Ea quis iuvaret expetendis his, te elit voluptua dignissim per,</div>
+                        <div class="text">Guru is a virtual learning platform. It's originally an academic project which facilitates the learning of Mathematics for a specific class (Js1) using multimedia content and providing assessments. This web app was built using Reactjs.</div>
                         <div class="overlay">
                             <div class="live-demo-text">Live Demo</div>
                         </div>
@@ -206,12 +206,13 @@
         <div class="section-container">
             <h2>Contact Me</h2>
             <h4>I'll Love To Hear From You</h4>
-            <form action="">
-                <input type="text" placeholder="Name" /><br />
-                <input type="text" placeholder="Email" /><br />
-                <input type="text" placeholder="Subject" /><br />
-                <textarea placeholder="Message..."></textarea>
-                <center><button type="submit">SUBMIT</button></center>
+            <form action="https://formsubmit.co/260dd68e540d05d1f9f0f48e14eb56d4" method="POST">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="text" placeholder="Name" name="name" /><br />
+                <input type="email" placeholder="Email" name="email"/><br />
+                <input type="text" placeholder="Subject" name="subject" /><br />
+                <textarea placeholder="Message..." name="message"></textarea>
+                <center><input type="submit" value="SUBMIT" name="submitBtn"></center>
             </form>
         </div>
     </section>
@@ -229,6 +230,6 @@
             <i class="fa fa-github"></i>
         </a>
     </footer>
-    
+
 </body>
 </html>
