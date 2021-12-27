@@ -19,13 +19,13 @@ h4 {
 nav {
     width: 100%;
     background: transparent;
-    padding-top: 1rem;
-    padding-bottom: .02rem;
+    padding-top: 1.3rem;
+    padding-bottom: 1rem;
     position: fixed;
     top: 0;
     z-index: 20;
 }
-nav a.hire-me-nav, .fa-arrow-circle-left, .fa-bars {
+nav a.hire-me-nav, .fa-arrow-circle-left {
     color: #cc005f;
 }
 nav a.hire-me-nav {
@@ -44,34 +44,8 @@ nav a.hire-me-nav:hover {
     font-size: 24px;
     margin-left: 50px;
 }
-.fa-bars {
-    float: right;
-    margin-right: -160px;
-    font-size: 20px;
-    padding: 10px;
-    visibility: hidden;
-}
-.drop-down-links {
-    width: 100%;
-    margin-top: 20px;
-    display: none;
-    z-index: 20;
-}
 
-.drop-down-links a{
-    width: 100%;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    background: #313131f3; 
-    padding-top: 30px;
-    padding-bottom: 30px;
-    color: #fff;
-}
-.drop-down-links a:hover {
-    text-decoration: underline;
-}
-.show {display: block;}
+
 
 
 
@@ -174,6 +148,7 @@ section {
 }
 
 
+
 /* skills */
 .skills {
     background: #313131 url('https://res.cloudinary.com/okafohenrie/image/upload/v1640171169/background-1299431_1280_hdu9db.png')  no-repeat center;
@@ -195,8 +170,8 @@ section {
     display: inline-grid;
 }
 
-/* Experience */
 
+/* Experience */
 .experience {
     background: #151515;
     padding: 3rem 0 7rem 0;
@@ -325,6 +300,8 @@ a.inverse:hover {
 }
 .contact-me input:focus, .contact-me textarea:focus {
     border-color: #cc005f;
+    outline-style: auto;
+    outline-width: 0px;
 }
 .contact-me input:focus-visible, .contact-me textarea:focus-visible {
     outline-style: auto;
@@ -349,6 +326,10 @@ input[type=submit] {
     background: #cc005f;
     border-color: #cc005f;
     color: #ebebeb;
+}
+input[type=submit]:hover {
+    background: #cc005fde;
+    border-color: #cc005fde;
 }
 
 
@@ -384,12 +365,10 @@ footer .fa-github:hover {
     nav {
         background: #fff;
     }
-    .fa-arrow-circle-left, .hire-me-nav {
+    .hire-me-nav {
         visibility: hidden;
     }
-    .fa-bars {
-        visibility: visible;
-    }
+    
 
     
     .content {
