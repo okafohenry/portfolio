@@ -25,7 +25,7 @@ nav {
     top: 0;
     z-index: 20;
 }
-nav a.hire-me-nav, .fa-arrow-circle-left {
+nav a.hire-me-nav, .fa-arrow-circle-left, .personal-info h2, .personal-info em, .education h2,  .experience h2, .live-demo-text{
     color: #cc005f;
 }
 nav a.hire-me-nav {
@@ -73,7 +73,7 @@ section {
     box-shadow: 0px 2px 5px 0px  #abababab;  
 }
 .personal-info p {
-    width: 65%;
+    width: 50%;
     margin: 30px auto 0 auto;
     font-size: 20px;
     text-align: left;
@@ -87,9 +87,7 @@ section {
     padding-top: 5em;
     clip-path: polygon(0 5%, 100% 0, 100% 100%, 0 100%);
 }
-.education h2 {
-    color: #cc005f;
-}
+
 
 .timeline-container{
     position: relative;
@@ -179,9 +177,7 @@ section {
     letter-spacing: 1px;
     line-height: 15px;
 }
-.experience h2 {
-    color: #cc005f;
-}
+
 
 
 .experience .degree-date::after{
@@ -262,7 +258,6 @@ a.inverse:hover {
   
   .live-demo-text {
     background-color: transparent;
-    color: #cc005f;
     border: 2px solid #cc005f;
     font-size: 16px;
     font-weight: bold;
@@ -369,7 +364,13 @@ footer .fa-github:hover {
         visibility: hidden;
     }
     
-
+    .personal-info p {
+        width: 75%;
+        font-size: 16px;
+    }
+    .education-info p {        
+        font-size: 16px;
+    }
     
     .content {
         width: 100%;
